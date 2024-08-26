@@ -48,15 +48,11 @@ h2 {
     margin-bottom: 10px;
 }
 
-.producto button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
+.producto button,
+#carrito button {
+    transition: background-color 0.3s ease;
 }
+
 
 .producto button:hover {
     background-color: #218838;
@@ -75,18 +71,20 @@ h2 {
 }
 
 #carrito button {
-    background-color: #dc3545;
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 0.9rem;
+    margin: 0 5px;
 }
 
 #carrito button:hover {
-    background-color: #c82333;
+    background-color: #0056b3;
 }
+
 
 #total {
     font-size: 1.2rem;
@@ -99,3 +97,39 @@ h2 {
         width: 100%;
     }
 }
+
+
+/* Añadir al final de style.css */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
